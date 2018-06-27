@@ -31,23 +31,6 @@ function remove_variables() {
   rm bashrc_variables.sh
 }
 
-
-function setup_add_reference() {
-  echo "# Command Line Project Workflow"
-  echo "source $(pwd)/bashrc_variables.sh"
-  echo "source $(pwd)/bashrc.sh"
-
-  echo "`setup_newline`# CLI Project Workflow Generated Aliases"
-}
-
-function setup_add_variable() {
-  echo "$1=\"$2\""
-}
-
-function setup_success() {
-  echo "The setup is complete. You may need to start a new session. (Y/n)"
-}
-
 function remove_newline() {
   echo $'\n> '
 }
